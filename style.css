@@ -1,0 +1,86 @@
+/* Delete these styles and add your own styles here! */
+
+body {
+  font-size: var(--font-3);
+  background-color: var(--purple);
+  height: 3000px;
+}
+
+header {
+  background-image: url(images/library-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.hcLogo {
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+.title {
+  color: var(--orange);
+  padding: var(--spacing-6) var(--spacing-0) var(--spacing-6);
+
+  position: absolute;
+  right: 5%;
+}
+
+.description {
+  color: var(--orange);
+  padding: var(--spacing-6) var(--spacing-0) var(--spacing-6);
+
+  position: absolute;
+  right: 5%;
+}
+
+.banner {
+  position: absolute;
+  top: -10px;
+  left: var(--spacing-4);
+}
+
+.banner img {
+  height: 80px;
+}
+
+.banner:hover img {
+  animation: wave-flag 0.5s linear infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner:hover img {
+    transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) transform;
+    transform-origin: top left;
+  }
+}
+
+@keyframes wave-flag {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+header > p, header > p > a{
+  color: var(--white)!important;
+}
+
+.container {
+  margin: var(--spacing-4) auto;
+}
+
+.blurb {
+  border: 2px dashed var(--border);
+  border-radius: var(--radii-default);
+  font-size: var(--font-4);
+  padding: var(--spacing-4);
+}
