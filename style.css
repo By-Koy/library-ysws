@@ -1,6 +1,7 @@
 body {
   background-color: var(--background);
   position: relative;
+  height: fit-content;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
   height: 500px;
   position: relative;
 
-  padding: 5%, 5%;
+  padding: 5% 5%;
 }
 
 header .hcLogo {
@@ -43,16 +44,21 @@ header .rsvpButton {
   left: 3%;
 }
 
-div#description {
+.books {
+  height: available;
+  margin: 5%;
+  width: 40%;
+  position: static;
+}
+
+.books p {
   position: relative;
-  padding: 5% 5%;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-#description div {
-  width: 45%;
-  position: absolute;
-}
-
-#description #projects {
-  right: 0;
+#event {
+  position: static;
+  margin-left: 2%;
+  margin-right: 2%;
 }
