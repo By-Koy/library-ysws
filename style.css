@@ -29,18 +29,18 @@ header .hcLogo {
   left: 5px;
 }
 
-header .subtitle {
-  padding-top: var(--spacing-6);
-
+header #tagline {
+  top: 40%;
+  right: 20%;
   position: absolute;
   anchor-name: --tagline;
-  right: 5%;
 }
 
-header .ultratitle {
+header #title {
   position: absolute;
   position-anchor: --tagline;
-  position-area: top;
+  top: anchor(bottom);
+  left: anchor(left);
 }
 
 header .rsvpButton {
@@ -49,14 +49,14 @@ header .rsvpButton {
   left: 3%;
 }
 
-.books {
+div .books {
   height: available;
   margin: 5%;
   width: 40%;
   position: static;
 }
 
-.books p {
+div .books p {
   position: relative;
   margin-right: 1%;
   margin-left: 1%;
