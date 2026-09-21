@@ -10,13 +10,13 @@ p {
 }
 
 header {
-  background-image: url(images/library-background.png);
+  background-image: url(images/Background.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   width: 100%;
-  height: 500px;
+  height: 100vh;
   position: relative;
 
   padding: 5% 5%;
@@ -26,7 +26,7 @@ header .hcLogo {
   width: 100px;
   position: absolute;
   top: 10px;
-  left: 5px;
+  left: 0px;
 }
 
 header #tagline {
@@ -38,9 +38,18 @@ header #tagline {
 
 header #title {
   position: absolute;
+    anchor-name: --title;
   position-anchor: --tagline;
   top: anchor(bottom);
   left: anchor(left);
+}
+
+header .libraryLogo {
+  width: 250px;
+  position: absolute;
+  position-anchor: --title;
+  top: anchor(top);
+  left: anchor(right);
 }
 
 header .rsvpButton {
