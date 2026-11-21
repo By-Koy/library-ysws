@@ -1,5 +1,9 @@
 body {
-  background-color: var(--background);
+  background-image: url(images/Background.webp);
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
+
   position: relative;
   height: fit-content;
 }
@@ -10,11 +14,6 @@ p {
 }
 
 header {
-  background-image: url(images/Background.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
   width: 100%;
   height: 100vh;
   position: relative;
@@ -71,4 +70,13 @@ div .books p {
   position: relative;
   margin-right: 1%;
   margin-left: 1%;
+}
+
+#footer {
+  align-content: center;
+}
+
+#footer p {
+  margin: 1px;
+  text-align: center;
 }
