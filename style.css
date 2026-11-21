@@ -1,3 +1,7 @@
+:root {
+  background-color: black;
+}
+
 body {
   background-image: url(images/Background.webp);
   background-repeat: repeat-y;
