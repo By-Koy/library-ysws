@@ -59,6 +59,11 @@ header .rsvpButton {
 
 }
 
+.caption.nonWhite {
+  color: #38424e; /* Similar to HC slate */
+}
+
+
 div .books {
   height: available;
   margin: 5%;
