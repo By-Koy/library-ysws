@@ -73,10 +73,8 @@ div .books p {
 }
 
 #footer {
-  align-content: center;
-}
-
-#footer p {
-  margin: 1px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
